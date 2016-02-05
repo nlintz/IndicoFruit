@@ -40,7 +40,7 @@ var FruitCard = React.createClass({
 
     render: function render() {
         var img_url = "/img/" + this.props.fruit.name + ".jpg";
-        var show_x = this.props.fruit.p_exists < 0.5 ? "show-x" : "";
+        var show_x = this.props.fruit.p_exists < 0.5 ? "show-x" : "hide-x";
         var formatted_p_exists = this.props.fruit.p_exists.toFixed(3);
         return React.createElement(
             'div',
@@ -79,7 +79,7 @@ var FruitProbas = React.createClass({
         var fruitCards = this.props.fruits.map(function (fruit) {
             return React.createElement(
                 'div',
-                { key: fruit.name, className: 'col s12 m4' },
+                { key: fruit.name, className: 'col s12 l4' },
                 React.createElement(FruitCard, { fruit: fruit })
             );
         });
@@ -120,7 +120,7 @@ var AlertForm = React.createClass({
                         React.createElement('input', { id: 'first_name', type: 'text', className: 'validate' }),
                         React.createElement(
                             'label',
-                            { 'for': 'first_name' },
+                            { htmlFor: 'first_name' },
                             'Email Address'
                         )
                     )
