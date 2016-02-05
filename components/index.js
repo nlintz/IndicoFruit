@@ -46,8 +46,8 @@ var FruitCard = React.createClass({
                     <img src={img_url} />
                     <img className={show_x} src="/img/X.png" />
                 </div>
-                <div className="card-content card-content center">
-                    <span className="card-title">{this.props.fruit.name}</span>
+                <div className="card-content card-content">
+                    <span className="card-title activator grey-text text-darken-4">{this.props.fruit.name}</span>
                     <p>P({this.props.fruit.name}) = {formatted_p_exists}</p>
                 </div>
             </div>

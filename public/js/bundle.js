@@ -53,10 +53,10 @@ var FruitCard = React.createClass({
             ),
             React.createElement(
                 'div',
-                { className: 'card-content card-content center' },
+                { className: 'card-content card-content' },
                 React.createElement(
                     'span',
-                    { className: 'card-title' },
+                    { className: 'card-title activator grey-text text-darken-4' },
                     this.props.fruit.name
                 ),
                 React.createElement(

@@ -13,7 +13,7 @@ html, body {
 }
 
 .card-content {
-    padding: 10px !important;
+    /*padding: 10px !important;*/
 }
 
 .no-margin-left {
@@ -33,6 +33,6 @@ html, body {
 }
 
 .card-image {
-    height: 75% !important;
+    height: 70% !important;
     max-height: 100% !important;
 }
